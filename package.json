@@ -11,6 +11,15 @@
     "format:check": "prettier --check .",
     "prepare": "husky"
   },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.{html,css,json,md}": [
+      "prettier --write"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AleksandrAndreew-Dev/clean-code-todo.git"
